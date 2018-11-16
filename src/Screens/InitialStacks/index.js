@@ -9,9 +9,13 @@ export default InitialStacks = createStackNavigator(
     {
         Home: HomeView,
         Register:RegisterView,
-        SignIn:SignInView
+        SignUp:SignInView
     },
     {
-        initialRouteName:'Home'
+        initialRouteName:'Home',
+        navigationOptions:{
+            header:null
+        }
+        
     }
 )
