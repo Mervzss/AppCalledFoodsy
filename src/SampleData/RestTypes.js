@@ -1,0 +1,5 @@
+export const HAMBURGER = "Hamburger"
+export const MEXICAN_FOOD = "Mexican Food"
+export const PH_FOOD = "Filipino Food"
+export const PIZZA = "Pizza"
+export const BEVERAGES = "Beverages"

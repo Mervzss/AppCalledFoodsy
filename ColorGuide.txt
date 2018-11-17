@@ -1,0 +1,9 @@
+GreenTheme: '#00bd57'
+
+DefaultText: '#333333'
+FadeText: '#b4b4af'
+
+FBColor: '#3748af'
+TwitterColor: '#009ee9'
+
+Star: '#ffca17'

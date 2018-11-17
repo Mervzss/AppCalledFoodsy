@@ -1,6 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
+//Custom GlobalColors imports
+import theme from '../../../../theme/color-styles'
+
 export const FoodsyButton = props => {
     return (
         <TouchableOpacity style={props.long ? { width: '70%', paddingBottom:12 } : { width: '60%', paddingBottom:12 }} onPress={props.onPress}>
@@ -15,7 +18,7 @@ export const FoodsyButton = props => {
 
 const styles = StyleSheet.create({
     touchButton:{
-        backgroundColor:'#00C457',
+        backgroundColor:theme.APP_COLOR,
         borderRadius: 30,
         width:'100%',
         height:55,

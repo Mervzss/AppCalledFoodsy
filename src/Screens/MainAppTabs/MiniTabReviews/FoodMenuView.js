@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-class RestaurantNearbyView extends Component {
+class FoodMenuView extends Component {
+    static navigationOptions ={
+        title: 'FOOD MENU'
+    }
     render() {
         return (
             <View>
-                <Text>RestaurantNearbyView</Text>
+                <Text>FoodMenuView</Text>
             </View>
         )
     }
 }
-export default RestaurantNearbyView;
+export default FoodMenuView;

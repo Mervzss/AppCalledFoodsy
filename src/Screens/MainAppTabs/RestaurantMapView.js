@@ -1,6 +1,8 @@
-
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+
+//Custom GlobalColors imports
+import theme from '../../../theme/color-styles'
 
 class RestaurantMapView extends Component {
     static navigationOptions ={
@@ -22,15 +24,7 @@ const styles = StyleSheet.create({
         width:'100%',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        backgroundColor:'white',
+        backgroundColor:theme.APP_BACKGROUND,
         paddingTop:10
     },
-    textInput:{
-        fontSize: 16,
-        fontWeight:'bold',
-        backgroundColor:'#e9e9e9',
-        width:'70%',
-        height:52
-    }
-
 });

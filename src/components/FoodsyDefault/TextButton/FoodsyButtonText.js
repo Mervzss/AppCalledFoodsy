@@ -3,6 +3,9 @@ import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import Icons from 'react-native-vector-icons/FontAwesome5'
 import { FoodsyText } from '../Text/FoodsyText'
 
+//Custom GlobalColors imports
+import theme from '../../../../theme/color-styles'
+
 export const FoodsyButtonText = props => {
     return (
         <View style={{ width: '70%' }}>
@@ -10,8 +13,8 @@ export const FoodsyButtonText = props => {
 
 
             <View style={styles.alignIcon}>
-                <TouchableOpacity onPress={props.onPress} style={{width:25}}>
-                    <Icons name='arrow-left' size={25} color='#333333' />
+                <TouchableOpacity onPress={props.onPress} style={{ width: 25 }}>
+                    <Icons name='arrow-left' size={25} color={theme.TEXT_BASE_COLOR} />
                 </TouchableOpacity>
 
             </View>
@@ -23,7 +26,7 @@ const styles = StyleSheet.create({
     alignIcon: {
         transform: [
             { translateX: 0 },
-            { translateY: -37 }
+            { translateY: -27 }
         ]
     }
 });

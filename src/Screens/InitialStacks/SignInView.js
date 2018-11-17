@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { View, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 
 import { FoodsyButtonText, FoodsyInput, FoodsyButton, FoodsyText } from '../../components/FoodsyDefault'
+
+//Custom GlobalColors imports
+import theme from '../../../theme/color-styles'
+
 class SignInView extends Component {
     render() {
         return (
@@ -10,11 +14,14 @@ class SignInView extends Component {
                 {/* HEADTEXT */}
                 <FoodsyButtonText title='SIGN IN' onPress={() => this.props.navigation.goBack()} />
 
+                <View style={{ height: 10 }} />
+
                 {/* INPUTS */}
                 <FoodsyInput placeholder='EMAIL ADDRESS' textAlign='center' />
                 <FoodsyInput placeholder='PASSWORD' textAlign='center' />
 
                 <View style={{ height: 15 }} />
+
                 {/* BUTTONS */}
                 <FoodsyButton title='LOGIN' long={true} onPress={() => this.props.navigation.navigate('Main')}/>
 
@@ -33,9 +40,9 @@ class SignInView extends Component {
                     <FoodsyText style={{ fontSize: 16, margin: 3 }}>OR</FoodsyText>
                 </View>
 
-                <FoodsyButton style={{ backgroundColor: '#193ee1' }} styleText={{ fontSize: 16 }} title='CONNECT WITH FACEBOOK' long={true} />
+                <FoodsyButton style={{ backgroundColor: theme.FB_COLOR }} styleText={{ fontSize: 16 }} title='CONNECT WITH FACEBOOK' long={true} />
                 <View style={{ height: 5 }} />
-                <FoodsyButton style={{ backgroundColor: '#3dbcf3' }} styleText={{ fontSize: 16 }} title='CONNECT WITH TWITTER' long={true} />
+                <FoodsyButton style={{ backgroundColor: theme.TWITTER_COLOR }} styleText={{ fontSize: 16 }} title='CONNECT WITH TWITTER' long={true} />
             </View>
         )
     }
@@ -48,15 +55,7 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        backgroundColor: 'white',
-        paddingTop: 10
+        backgroundColor: theme.APP_BACKGROUND,
+        paddingTop: 15
     },
-    textInput: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        backgroundColor: '#e9e9e9',
-        width: '70%',
-        height: 52
-    }
-
 });

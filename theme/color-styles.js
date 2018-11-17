@@ -1,0 +1,19 @@
+export default
+{
+// APP THEME
+APP_COLOR: '#00bd57',
+APP_BACKGROUND: 'white',
+// TEXT
+TEXT_BASE_COLOR: '#333333',
+TEXT_FADE: '#b4b4af',
+
+//BUTTONS
+FB_COLOR: '#3748af',
+TWITTER_COLOR: '#009ee9',
+
+BUTTON_TEXT_COLOR:'white',
+
+//STAR
+STAR_COLOR:'#ffca17'
+
+}

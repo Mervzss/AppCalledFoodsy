@@ -4,6 +4,9 @@ import { View, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import Logo from '../../../assets/company_logo.png'
 import { FoodsyButton } from '../../../src/components/FoodsyDefault'
 
+//Custom GlobalColors imports
+import theme from '../../../theme/color-styles'
+
 class HomeView extends Component {
     render() {
         return (
@@ -27,27 +30,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: theme.APP_BACKGROUND
     },
-    textStyle: {
-        fontSize: 22,
-        textAlign: 'center',
-        color: "#454647",
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-    touchButton: {
-        backgroundColor: '#00C457',
-        borderRadius: 25,
-        width: '100%',
-        alignItems: 'center'
-    },
-    textButton: {
-        color: 'white',
-        fontSize: 20,
-        margin: 10
-    }
 });
