@@ -11,7 +11,7 @@ class RestaurantMapView extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>RestaurantMapView</Text>
+                <Text>No Map Yet</Text>
             </View>
         )
     }
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width:'100%',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:theme.APP_BACKGROUND,
         paddingTop:10

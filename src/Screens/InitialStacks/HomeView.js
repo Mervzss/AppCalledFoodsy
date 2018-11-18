@@ -12,8 +12,12 @@ class HomeView extends Component {
         return (
 
             <View style={styles.container}>
-
-                <Image source={Logo} style={{ width: '100%', height: 250 }} resizeMode='center' />
+                <Image source={{uri:'https://images.unsplash.com/photo-1531361171768-37170e369163?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=a0801ec4c751ce57fd80f1dbb394d5a4&amp;dpr=1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&amp;cs=tinysrgb'}}
+                style={{ width: '100%', height: 410 }} resizeMode='cover'/>
+                <View style={{ width: '100%', padding:10, paddingBottom:15, alignItems:'center' }}>
+                    <Image source={Logo} style={{ width: '70%', height: 90 }} resizeMode='contain' />   
+                </View>
+                
 
                 <FoodsyButton title='SIGN UP' onPress={() => this.props.navigation.navigate('Register')} />
                 <FoodsyButton title='LOG IN' onPress={() => this.props.navigation.navigate('SignUp')} style={{ backgroundColor: '#333333' }} />
@@ -28,7 +32,7 @@ export default HomeView;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         backgroundColor: theme.APP_BACKGROUND
     },
